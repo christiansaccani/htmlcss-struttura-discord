@@ -59,7 +59,7 @@ header {
     margin: 0 auto;
 }
 
-.pink {
+.pink-box {
     border: 1px black dashed;
     background-color: #ee82ee;
     width: 100%;
@@ -69,6 +69,11 @@ header {
 .section-white {
     background-color: #ffffff;
 }
+
+.section-grey {
+    background-color: #d3d3d3;
+}
+
 
 .section-element {
     display: flex;
