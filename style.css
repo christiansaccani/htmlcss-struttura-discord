@@ -150,16 +150,34 @@ footer {
 }
 
 .footer-element2 {
+    width: 1250px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.container-last {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    max-width: 1250px;
+
+    background-color: #7fffd4;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 0px;
 }
 
-.container-last {
-    background-color: #7fffd4;
-    padding: 20px 0px;
+.ft-logo {
+    border: 1px black dashed;
+    background-color: #ffb6c1;
+    /* width: 75px;
+    height: 40px; */
+    padding: 10px 15px;
+}
+
+.thebutton {
+    border: 1px black dashed;
+    background-color: #ffb6c1;
+    /* width: 75px;
+    height: 40px; */
+    padding: 10px 15px;
 }
