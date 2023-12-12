@@ -4,3 +4,45 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+}
+
+.nav {
+    background-color: #add8e6;
+}
+
+.nav-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 15px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.orange {
+    border: 1px black dashed;
+    background-color: #daa520;
+
+    padding: 10px;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.link {
+    text-align: center;
+    flex-grow: 2;
+}
+
+.login {
+    text-align: end;
+    flex-grow: 1;
+}
+
