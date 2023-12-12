@@ -85,16 +85,23 @@ header {
     margin: 0 auto;
 }
 
-.squareimg {
+.img-box {
     border: 1px black dashed;
     background-color: #1e90ff;
     width: 60%;
     height: 520px;
 }
 
-.squaretxt {
+.txt-box {
     border: 1px black dashed;
     background-color: #ffc0cb;
     width: 40%;
     height: 520px;
+}
+
+.green-box {
+    border: 1px black dashed;
+    background-color: #228b22;
+    width: 100%;
+    height: 935px;
 }
