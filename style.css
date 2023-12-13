@@ -12,16 +12,23 @@
     /* margin: 0 auto; */
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* nav */
 
 nav {
     background-color: #add8e6;
+    padding: 0px 10px;
 }
 
 .nav-elements {
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: flex-start; */
+    flex-direction: row;
+    justify-content: space-between;
 
     padding: 15px 0px;
     max-width: 1250px;
@@ -44,6 +51,19 @@ nav {
     flex-grow: 2;
 }
 
+.link-square ul {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+    list-style: none;
+}
+
+.link-square ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 .login-square {
     text-align: end;
     flex-grow: 1;
@@ -55,20 +75,16 @@ nav {
 
 header {
     background-color: #00008b;
+    padding: 0px 10px;
 }
 
 .header-element {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
     padding: 50px 0px;
     max-width: 950px;
     margin: 0 auto;
 }
 
 .pink-box {
-    display: inline-block;
     border: 1px black dashed;
     background-color: #ee82ee;
     width: 100%;
@@ -81,46 +97,42 @@ header {
 
 main > section:nth-child(odd) {
     background-color: #ffffff;
+    padding: 0px 10px;
 }
 
 main > section:nth-child(even) {
     background-color: #d3d3d3;
+    padding: 0px 10px;
 }
 
 /* opzione utilizzata per permettere l'alternanza */
 
 .section-element {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
     padding: 50px 0px;
     max-width: 1250px;
     margin: 0 auto;
 }
 
-/* APPUNTO PERSONALE: ricorda che hai impostato una max-widht, perciò justify,content e margin vanno combinati per mettere effettivamente l'elemento al centro */
+/* APPUNTO PERSONALE: ricorda che hai impostato una max-widht, perciò justify-content e margin vanno combinati per mettere effettivamente l'elemento al centro */
 
 .img-box {
     border: 1px black dashed;
     background-color: #1e90ff;
-    max-width: 60%;
-    width: 100%;
+    flex-grow: 3;   /* width: 60%; */
     height: 520px;
 }
 
 .txt-box {
     border: 1px black dashed;
     background-color: #ffc0cb;
-    max-width: 40%;
-    width: 100%;
+    flex-grow: 2;   /* width: 40%; */
     height: 520px;
 }
 
 .green-box {
     border: 1px black dashed;
     background-color: #228b22;
-    width: 100%;
+    flex-grow: 1;   /* widht=100% */
     height: 935px;
 }
 
@@ -130,35 +142,30 @@ main > section:nth-child(even) {
 
 footer {
     background-color: #23272a;
+    padding: 0px 10px;
 }
 
-.footer-element1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+#footer-element1 {
     max-width: 1250px;
     margin: 0 auto;
     padding: 10px 0px 45px 0px;
 }
 
-.first-box {
+#footer-element1 > .first-box {
     border: 1px black dashed;
     background-color: #f08080;
-    /* width: 40%; */
-    flex-grow: 1.8;
+    flex-grow: 1.4;   /* width: 40%; */
     height: 600px;
 }
 
-.second-box {
+#footer-element1 > .second-box {
     border: 1px white dashed;
     background-color: #20b2aa;
-    /* width: 28%; */
-    flex-grow: 1;
+    flex-grow: 1;       /* width: 28%; */
     height: 600px;
 }
 
-.footer-element2 {
+#footer-element2 {
     width: 1250px;
     margin: 0 auto;
     padding-top: 20px;
@@ -170,7 +177,7 @@ footer {
     justify-content: space-between;
 
     background-color: #7fffd4;
-    width: 100%;
+    flex-grow: 1;   /* width: 100%; */
     margin: 0 auto;
     padding: 20px 0px;
 }
@@ -192,3 +199,5 @@ footer {
     /* width: 75px;
     height: 40px; */
 }
+
+/* footer end */
